@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Slack Unblur Old Messages",
+  "version": "1.0",
+  "description": "Unblur older Slack messages hidden on the free Slack plan.",
+  "permissions": ["scripting"],
+  "host_permissions": ["*://*.slack.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.slack.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
