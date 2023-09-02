@@ -7,9 +7,21 @@ function unblurMessages() {
   });
 }
 
-// run function when the page loads
-unblurMessages();
+function removeLimitedHistoryBanner() {
+  const banner = document.getElementById("limitedHistoryBanner");
+  if (banner) {
+    banner.style.display = "none";
+  }
+}
 
-// observe the DOM for changes and unblur new ones
-const observer = new MutationObserver(() => unblurMessages());
+// run functions when the page loads
+unblurMessages();
+removeLimitedHistoryBanner();
+
+// observe the DOM for changes and apply functions when applicable
+const observer = new MutationObserver(() => {
+  unblurMessages();
+  removeLimitedHistoryBanner();
+});
+
 observer.observe(document.body, { childList: true, subtree: true });
