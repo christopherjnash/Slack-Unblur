@@ -2,7 +2,7 @@
 
 ![slack unblur](https://github.com/user-attachments/assets/08f112e2-47ea-415d-9cdb-d3c1a8f05eb7)
 
-**Slack Unblur Old Messages** is a Chrome extension that removes the blur effect applied to messages older than 90 days on Slack free plan.
+**Slack Unblur Old Messages** is a Chrome extension that removes the blur effect and message truncations applied to messages older than 90 days on Slack free plan.
 
 ## Installation & Usage
 
@@ -22,3 +22,5 @@ If you encounter this issue:
 
 1. **Report a Bug**: Open an issue in this repo, and I will update the extension.
 2. **Fix it Yourself**: If you can, update the code, test it with the new UI and submit a pull request.
+
+## Forked from [ch33kaboo's repo](https://github.com/ch33kaboo/Slack-Unblur-Old-Messages)
