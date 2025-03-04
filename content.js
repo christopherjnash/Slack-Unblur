@@ -4,6 +4,8 @@ function unblurMessages() {
   );
   blurredMessages.forEach((message) => {
     message.classList.remove("c-message_kit__hidden_message_blur");
+    message.classList.remove("c-truncate");
+    message.classList.remove("c-truncate--break_words");
   });
 }
 
